@@ -4,7 +4,7 @@ C:\app\admin\product\12.2.0\dbhome_1\network\admin
 
 SQL> SHOW USER;
 
-
+````
 COLUMN name FORMAT a20;
 
 SELECT name, con_id FROM v$pdbs;
@@ -23,14 +23,15 @@ PDB$SEED
 
 ORCLPDB
          3
+````
 
-=================
+````
 SQL> select name as "Service Name" from v$active_services where con_id = 3;
 Service Name
 ----------------------------------------------------------------
 orclpdb
 SQL> cl scr
-=================
+````
 
 netca
 
@@ -58,7 +59,7 @@ SHOW con_name;
 
 
 
-
+````
 CREATE USER OT IDENTIFIED BY 1234;
 
 ALTER USER OT IDENTIFIED BY admin;
@@ -66,7 +67,7 @@ ALTER USER OT IDENTIFIED BY admin;
 SELECT table_name FROM user_tables ORDER BY table_name;
 
 GRANT CONNECT, RESOURCE, DBA TO OT;
-
+````
 
 
 
@@ -76,7 +77,7 @@ GRANT CONNECT, RESOURCE, DBA TO OT;
 @c:\dbsample\ot_data.sql
 
 
-
+````
 SELECT COUNT(*) FROM contacts;
 
 SELECT * FROM contacts;
@@ -102,6 +103,7 @@ FROM
     customers
 ORDER BY
     name ASC;
+````
 
 
 
@@ -112,8 +114,7 @@ ORDER BY
 
 
 
-
-
+## rman
 
 RMAN> run {
 2> shutdown immediate;
@@ -121,6 +122,7 @@ RMAN> run {
 4> backup database plus archivelog;
 5> }
 
+````
 database closed
 database dismounted
 Oracle instance shut down
@@ -188,7 +190,7 @@ piece handle=C:\APP\ADMIN\PRODUCT\12.2.0\DBHOME_1\DATABASE\C-1579616761-20200924
 Finished Control File and SPFILE Autobackup at 24-SEP-20
 
 RMAN>
-
+````
 
 
 
@@ -197,10 +199,8 @@ ORCLPDB
 
 system
 
-At123456
 
-
-##cmd run as admin
+## cmd run as admin
 
 sqlplus / as sysdba
 
