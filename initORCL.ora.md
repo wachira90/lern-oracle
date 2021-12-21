@@ -21,3 +21,10 @@ undo_tablespace='UNDOTBS1'
 control_files = (/u01/app/oracle/oradata/ORCL/control01.ctl, /u01/app/oracle/flash_recovery_area/ORCL/control02.ctl)
 compatible ='11.2.0'
 ````
+
+## if change "memory_target=3G"  will size up partition
+````
+[oracle@oracle11gr2 ~]$ df -h /dev/shm/
+Filesystem      Size  Used Avail Use% Mounted on
+tmpfs           3.9G     0  3.9G   0% /dev/shm
+````
