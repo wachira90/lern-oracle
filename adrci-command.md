@@ -51,5 +51,11 @@ ADR Home = /u01/app/oracle/diag/tnslsnr/oracle11gr2/listener:
 adrci>
  ````
  
+ ### for more info
+ 
+ ````
+ https://oracle-base.com/articles/11g/automatic-diagnostics-repository-11gr1
+ ````
+ 
  
  
