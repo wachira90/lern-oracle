@@ -1,6 +1,6 @@
 ## listener.ora and tnsnames.ora 
 
-### /u01/app/oracle/product/11.2.0.4/db_1/network/admin/listener.ora
+### /u01/app/oracle/product/11.2.0.1/db_1/network/admin/listener.ora
 
 ````
 LISTENER =
@@ -15,7 +15,7 @@ ADR_BASE_LISTENER = /u01/app/oracle
 DEFAULT_SERVICE_LISTENER = (LISTENER)
 ````
 
-### /u01/app/oracle/product/11.2.0.4/db_1/network/admin/tnsnames.ora
+### /u01/app/oracle/product/11.2.0.1/db_1/network/admin/tnsnames.ora
 
 ````
 ORCL=
